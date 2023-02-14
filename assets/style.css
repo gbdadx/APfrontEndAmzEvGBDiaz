@@ -7,8 +7,6 @@
 /*  mavbar  */
 
 
-
-
 /*   header  */
 
 h1 {
@@ -37,24 +35,14 @@ h1 {
 
 .galeria .card {
     align-self: center;
-    background-color: aqua;
+    background-color: antiquewhite;
+    width: 18rem;
 }
+
 
 
 
 /*   footer    */
 
-.footer-inicial a {
-    align-self: stretch;
-    padding-right: 30px;
 
-}
-
-.footer-final h2 {
-    text-align: end;
-}
-
-/*   pagina details  */
-.details div{
-    
-}
+/*Small devices (landscape phones, 576px and up)*/
