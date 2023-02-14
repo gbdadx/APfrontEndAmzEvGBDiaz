@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  mavbar  */
+
+
+
+
+/*   header  */
+
+h1 {
+    text-align: center;
+}
+
+
+/*   formulario   */
+.input-group span {
+    padding-right: 5px;
+}
+
+.chev {
+    display: flex;
+    align-items: center;
+}
+
+/*   galeria   */
+
+.galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.galeria .card {
+    align-self: center;
+    background-color: aqua;
+}
+
+
+
+/*   footer    */
+
+.footer-inicial a {
+    align-self: stretch;
+    padding-right: 30px;
+
+}
+
+.footer-final h2 {
+    text-align: end;
+}
+
+/*   pagina details  */
+.details div{
+    
+}
