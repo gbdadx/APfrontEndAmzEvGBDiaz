@@ -1,133 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home </title>
+    <link rel="shortcut icon" href="assets/img/favicon-AmazingEvents.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Home</title>
-    <link rel="shortcut icon" href="./assets/img/favicon-AmazingEvents.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <title>Bootstrap </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-            integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-            crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="./assets/style.css">
-    </head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href="./index.html">
+                <figure>
+                    <img src="./assets/img/LogoAmazingEvents.png" id="logo" alt="logo">
+                </figure>
 
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <div class="container-fluid ">
-                <a class="navbar-brand " href="./index.html">
-                    <figure>
-                        <img src="./assets/img/Logo Amazing Events.png" alt="logo" width="150px">
-                    </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="navbar-nav ">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="./upcoming.html">Upcoming events</a>
+                    <a class="nav-link" href="./past.html">Past events</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
 
-                    <div class="navbar-nav ">
-                        <a class="nav-link active" href="./index.html">Home</a>
-                        <a class="nav-link" href="./upcoming.html">Upcoming events</a>
-                        <a class="nav-link" href="./past.html">Past events</a>
-                        <a class="nav-link" aria-current="page" href="#">Contact</a>
-
-                        <a class="nav-link" href="./stats.html">Stats</a>
-                    </div>
+                    <a class="nav-link" href="./stats.html">Stats</a>
                 </div>
             </div>
-        </nav>
-        <!--header-->
-        <hr>
-        <div class="container-fluid bg-light flex-row text-center">
+        </div>
+    </nav>
 
-            <div class="row ">
-                <div class="col-1 chev">
-                    <a href="./past.html" title="stats"> <img src="./assets/img/chevron-left.svg"
-                            alt="chevron-left"></i>
-                    </a>
-                </div>
-                <div class="col-10">
-                    <h1>Home</h1>
-                </div>
-                <div class="col-1 chev">
+    <!-- details -->
+    <div class="container-fluid d-flex justify-content-center mt-5 px-4  text-center  ">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row gx-5  details border border-success pt-5 px-3 mt-5 mb-2">
+            <div class="col-12  col-md-6">
 
-                    <a href="./stats.html" title="upcoming"> <img src="./assets/img/chevron-right.svg"
-                            alt="chevron-right"></i> </a>
+                <div class="card-img shadow p-3 mb-5 bg-body rounded ">
+                    <img src="./assets/img/Music_Concert.jpg" alt="music">
                 </div>
             </div>
 
-        </div>
-        <!-- details -->
-        <div class="container py-10 px-4 overflow-hidden text-center ">
-            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-            <div class="row gx-5  details">
-                <div class="col-12  col-md-6">
-
-                    <div class="card-img shadow p-3 mb-5 bg-body rounded ">
-                        <img src="./assets/img/Music_Concert.jpg" alt="music">
-                    </div>
-                </div>
-                <div class="col-12  col-md-6 shadow p-3 mb-5 bg-body rounded">
-                    <h4>titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et?</p>
-                </div>
+            <div class="col-12  col-md-6 shadow p-3 mb-5 bg-body rounded">
+                <h4>titulo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et?</p>
             </div>
-
-
         </div>
 
 
+    </div>
 
-        <!--    footer  -->
 
-        <div class="b-example-divider"></div>
 
-        <div class="container-fluid">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-6 footer-inicial ">
-                    <a href="#"> <img src="./assets/img/instagram.svg" alt="instagram" width="24" height="24"> </a>
-                    <a href="#"> <img src="./assets/img/facebook.svg" alt="facebook" width="24" height="24">
-                    </a>
-                    <a href="#"><img src="./assets/img/whatsapp.svg" alt="whatsapp" width="24" height="24">
-                    </a>
+    <!--    footer  -->
 
-                </div>
-                <div class="col-6 footer-final">
-                    <h2>Cohort</h2>
-                </div>
 
-            </footer>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto border-top">
+        <div class="footers col-md-4 footer text-center  py-1  ">
+            <a href="#" class="px-2"> <img src="./assets/img/instagram.svg" alt="instagram" width="24" height="24">
+            </a>
+            <a href="#" class="px-2"> <img src="./assets/img/facebook.svg" alt="facebook" width="24" height="24">
+            </a>
+            <a href="#" class="px-2"><img src="./assets/img/whatsapp.svg" alt="whatsapp" width="24" height="24">
+            </a>
         </div>
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+        <div class="footers col-md-2"></div>
+        <div class="footers col-md-5  mx-3 py-1 text-center">
+            <h2>Cohort</h2>
+        </div>
 
-    </body>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-    </html>
+</body>
+
+</html>
