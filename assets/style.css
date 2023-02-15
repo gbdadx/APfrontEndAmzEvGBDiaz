@@ -5,8 +5,8 @@
 }
 
 /*  mavbar  */
-#logo{
-    width:150px;
+#logo {
+    width: 150px;
 }
 
 /*   header  */
@@ -32,19 +32,13 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    gap: 5px;
+    margin-bottom: 15px;
+    
 }
 
 .galeria .card {
     align-self: center;
     background-color: antiquewhite;
-    width: 18rem;
+    margin: 10px 0px;
+    padding: 10px;
 }
-
-
-
-
-/*   footer    */
-
-
-/*Small devices (landscape phones, 576px and up)*/
