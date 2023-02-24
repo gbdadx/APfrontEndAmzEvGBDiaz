@@ -22,7 +22,7 @@ for (const uno of futuros) {
         <h5 class="card-title">${uno.name}</h5>
         <p class="card-text">${uno.description}</p>
     </div>
-    <div class="card-foo px-2">
+    <div class="card-footer px-2">
     <span>Price: $ ${uno.price}</span>
         <a href="./details.html" class="btn btn-primary ">Details</a>
     </div>
