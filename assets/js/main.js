@@ -1,42 +1,34 @@
 
-/** pruebas */
-for (let i of eventos.events) {
-    console.log(i);
-}
-
-console.log(`imprime el primer evento${eventos.events[0]}`)
-console.log()
-for (let i of eventos.events) {
-    console.log(`imprime fecha de cada evento${i.date}`);
-}
 const fechaBase = eventos.currentDate;
 
 const todos = [];
 for (let i of eventos.events) {
-    
-        todos.push(i);
-        console.log(i)
-    }
 
-
-/* pruebas con tarjetas */
-const tarjetas = document.getElementsByClassName("card");
-for (let i of tarjetas) {
-    console.log(i)
-
+    todos.push(i);
 }
 
-/* tarjeta
-<div class="col-12 col-md-5 col-lg-3 card" >
-            <img src="./assets/img/BulkResizePhotos.com (1)/Cinema.jpg" class="card-img-top" alt="cinema">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text </p>
 
-                <a href="./details.html" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        */
+/* pruebas con tarjetas*/
+const contenedorTarjetas = document.getElementById("galeria")
+let tarjetas = '';
+for (const uno of todos) {
+
+    tarjetas += `<div class="col-12 col-md-5 col-lg-3 card" >
+                        <div class="card-header">
+                            <img src="${uno.image}" class="card-img-top" alt="${uno.name}">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">${uno.name}</h5>
+                            <p class="card-text">${uno.description}</p>
+                        </div>
+                        <div class="card-foo px-2">
+                        <span>Price: $ ${uno.price}</span>
+                            <a href="./details.html" class="btn btn-primary ">Details</a>
+                        </div>
+                </div>`
+}
+contenedorTarjetas.innerHTML = tarjetas;
+
 
 
 
