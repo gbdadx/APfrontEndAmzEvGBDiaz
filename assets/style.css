@@ -72,6 +72,7 @@ h1 {
     justify-content: space-between;
 }
 
+
 /* mediaqueries para navbar y header, oculta elementos por debajo de 359px*/
 @media screen and (max-width:359px) {
     .ocultar {
