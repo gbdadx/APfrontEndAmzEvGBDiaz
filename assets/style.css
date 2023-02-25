@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*  mavbar  */
+/*  navbar  */
 #logo {
     width: 150px;
 }
@@ -54,11 +54,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
+  
 }
 
 .card-header img {
-    max-height: 220px;
+    max-height: 230px;
 }
 
 .card-body {
@@ -70,4 +70,12 @@ h1 {
     background-color: white;
     display: flex;
     justify-content: space-between;
+}
+
+/* mediaqueries para navbar y header, oculta elementos por debajo de 290px*/
+@media screen and (max-width:290px){
+    .ocultar{
+        display:none;
+    }
+    
 }

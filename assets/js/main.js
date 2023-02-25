@@ -30,6 +30,15 @@ for (const uno of todos) {
 contenedorTarjetas.innerHTML = tarjetas;
 
 
+/** console.log categorias */
 
+const categorias = [];
+for (let i of eventos.events) {
+    if (!categorias.includes(i.category))
+        categorias.push(i.category);
+
+
+}
+console.log(categorias)
 
 
