@@ -7,7 +7,7 @@ const eventos = {
 
 /* pruebas con tarjetas-idea es hace una funcion para las tres paginas
 */
-const contenedorTarjetas = document.getElementById("galeria")
+const contenedorTarjetas = document.getElementById("galeria");
 let tarjetas = '';
 function armadoGaleria(cadena, array) {
     for (const uno of array) {
