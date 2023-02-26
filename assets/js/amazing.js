@@ -11,18 +11,18 @@ const contenedorTarjetas = document.getElementById("galeria");
 let tarjetas = '';
 function armadoGaleria(cadena, array) {
     for (const uno of array) {
-        
+
 
         cadena += `<div class="col-12 col-md-5 col-lg-3 card" >
-                        <div class="card-header">
-                            <img src="${uno.image}" class="card-img-top" alt="${uno.name}">
+                        <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
+                           
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">${uno.name}</h5>
                             <p class="card-text">${uno.description}</p>
                         </div>
                         <div class="card-footer px-2">
-                        <span>Price: $ ${uno.price}</span>
+                        <span>Price:  ${uno.date}</span>
                             <a href="./details.html" class="btn btn-primary ">Details</a>
                         </div>
                 </div>`
