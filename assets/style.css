@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*  navbar  */
 #logo {
     width: 150px;
@@ -15,10 +19,6 @@ h1 {
     text-align: center;
 }
 
-.amazHome {
-    max-width: 100%;
-    height: auto;
-}
 
 /*   formulario   */
 .input-group span {
@@ -74,6 +74,10 @@ h1 {
     background-color: white;
     display: flex;
     justify-content: space-between;
+}
+
+.awesonfoot:hover{
+    color:white;
 }
 
 
