@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-/*  mavbar  */
+a {
+    text-decoration: none;
+}
+
+/*  navbar  */
 #logo {
     width: 150px;
 }
@@ -44,6 +48,43 @@ h1 {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.fa-brands{
-   
+.card {
+    height: 450px;
+}
+
+.card-header {
+    height: 230px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-header img {
+    max-height: 230px;
+}
+
+.card-body {
+    height: 150px;
+}
+
+.card-footer {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.awesonfoot:hover{
+    color:white;
+}
+
+
+/* mediaqueries para navbar y header, oculta elementos por debajo de 359px*/
+@media screen and (max-width:359px) {
+    .ocultar {
+        display: none;
+    }
+
 }
