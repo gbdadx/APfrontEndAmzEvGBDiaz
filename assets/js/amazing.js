@@ -22,8 +22,8 @@ function armadoGaleria(cadena, array) {
                             <p class="card-text">${uno.description}</p>
                         </div>
                         <div class="card-footer px-2">
-                        <span>Price:  ${uno.date}</span>
-                            <a href="./details.html" class="btn btn-primary ">Details</a>
+                        <span> ${uno.date}</span>
+                            <a href="./details.html" class="btn btn-primary ">More info</a>
                         </div>
                 </div>`
     }
