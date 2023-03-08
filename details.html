@@ -11,17 +11,8 @@
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/cee4e31326.js" crossorigin="anonymous"></script>
     <style>
-        .spanes {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        #place {
-            padding: 15px 0px;
-        }
-
         .cont {
-            height: 300px;
+            height: 320px;
             margin-bottom: 20px;
             margin-right: 10px;
         }
@@ -71,27 +62,30 @@
     </nav>
 
     <!-- details -->
-    <div class="container-fluid d-flex  mt-5 px-4  text-center  ">
+    <div class="container d-flex  mt-1 px-3    text-center  ">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="container-fluid row gx-3 justify-content-around details border border-light pt-5 px-3 mt-5 mb-2 ">
-            <div class="col-12  col-md-6 shadow p-3 mb-5  rounded cont" id="cont1">
+        <div class="container-fluid row gx-3 justify-content-around align-content-around details border border-light pt-5 px-3 mt-5 mb-2 ">
+            <div class="col-12  col-lg-5 shadow p-3 mb-5  rounded cont" id="cont1">
 
                 <div class="card-img" id="foto">
                 </div>
             </div>
 
-            <div class="col-12  col-md-5 shadow p-3 mb-5  cont " id="cont2">
+            <div class="col-12  col-lg-6 shadow p-3 mb-5  cont " id="cont2">
                 <h4 id="name">titulo</h4>
                 <p id="category"></p>
                 <p id="description"></p>
-                <div class="spanes">
-                    <span id="date"></span>
+                <div class="spanes d-flex justify-content-around align-center">
                     <span id="price"></span>
-                </div>
 
-                <p id="place"></p>
-                <div class="spanes">
-                    <span id="capacity"></span>
+                    <span id="place"></span>
+                </div>
+                <p id="date"></p>
+
+
+                <div class="spanes d-flex justify-content-center align-center">
+                    <span id="capacity" style="padding-right:15px"></span>
+
                     <span id="assistance"></span>
                 </div>
             </div>

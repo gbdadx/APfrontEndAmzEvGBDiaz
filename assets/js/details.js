@@ -16,7 +16,9 @@ document.getElementById('price').innerHTML = `Price: $ ${evento.price} `;
 document.getElementById('place').innerHTML = `Place: ${evento.place}`;
 
 document.getElementById('capacity').innerHTML = `Capacity: ${evento.capacity}`;
-document.getElementById('assistance').innerHTML = `Assitance: ${evento.assistance}`;
+if (evento.assistance !==undefined) {
+    document.getElementById('assistance').innerHTML = `Assitance: ${evento.assistance}`;
+}
 
 
 /* cambiar color tarjetas de eventos pasados */
@@ -26,8 +28,8 @@ const contElem = document.getElementById("date").innerText.substring(6);
 const cont2 = document.getElementById("cont2");
 const cont1 = document.getElementById("cont1");
 
-console.log(contElem < eventos.currentDate);
-if (contElem < eventos.currentDate) {
+console.log(contElem < evento.currentDate);
+if (contElem < evento.currentDate) {
     cont1.style.backgroundColor = "Lavender";
 
     cont2.style.backgroundColor = "Lavender";
