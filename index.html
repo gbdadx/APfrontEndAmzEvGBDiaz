@@ -67,56 +67,18 @@
     <form action="#">
         <div class="container-fluid d-flex row bg-warning justify-content-between mx-0">
 
-            <div class="col-12 col-md-7 text-center text-md-start py-1 pt-2">
-
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox1"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> </label>
-
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox2"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"></label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox3"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> </label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox4"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4"></label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox5"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5"> </label>
-                </div>
-
-
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox6"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6"></label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label form-control-sm" for="inlineCheckbox7"><span class="caja"></span>
-
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7"></label>
-                </div>
+            <div class="col-12 col-md-7 text-center text-md-start py-1 pt-2" id="caja">
+                <!-- from js,  checkboxes-->
             </div>
 
+            
             <div class="col-12 col-md-4 py-1">
                 <div class="input-group text-center text-md-end">
-                    <input type="text" class="form-control" placeholder="event" aria-label="event"
-                        aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search by title" 
+                        aria-describedby="search-button">
+
+
+                    <button class="btn btn-outline-secondary" type="button" id="search-button" ">Search</button>
                 </div>
             </div>
 
@@ -161,7 +123,7 @@
         crossorigin="anonymous"></script>
     <!-- link a pagina js-->
     <script src="./assets/js/amazing.js"></script>
-    <script src="./assets/js/categorias.js"></script>
+
     <script src="./assets/js/main.js"></script>
 
 </body>
