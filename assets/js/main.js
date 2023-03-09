@@ -1,4 +1,7 @@
-
+/**
+ * se que todos pusieron el precio en las cards en las paginas de home, upcoming y past events,
+ *  pero a mi me parecio que si tenia que ampliar detalles, pero preferi ponerlo en detalles. 
+ */
 /**
  * armado de tarjetas y galeria
  */
@@ -104,7 +107,7 @@ categoryCheckboxes.forEach(checkbox => {
 
         if (checkedCheckboxes.length === 0) {
             // si ningun checkbox esta seleccionado, muestra todos los eventos
-            contenedorTarjetas.innerHTML = armadoGaleria('', eventos.events);
+            contenedorTarjetas.innerHTML = armadoGaleria('', todos);
             goToDetails();
 
         } else {
@@ -114,7 +117,7 @@ categoryCheckboxes.forEach(checkbox => {
 
 
             // filtra eventos basado en categorias marcadas-seleccionadas
-            const filteredEvents = eventos.events.filter(event => checkedValues.includes(event.category));
+            const filteredEvents = todos.filter(event => checkedValues.includes(event.category));
 
             if (filteredEvents.length === 0) {
                 // si ningun evento coincide con la categoria marcada, no muestra nada
@@ -145,14 +148,14 @@ searchButton.addEventListener('click', event => {
 
     if (checkedValues.length === 0 && searchTerm === '') {
         // si ningun checkbox esta tildado y ninguna palabra fue buscada, muestra todos los eventos
-        contenedorTarjetas.innerHTML = armadoGaleria('', eventos.events);
+        contenedorTarjetas.innerHTML = armadoGaleria('', todos);
         goToDetails();
 
     } else {
         // eventos filtrados en base a los chek y palabra en search
         const filteredEvents = [];
 
-        for (const event of eventos.events) {
+        for (const event of todos) {
             const includesCategory = checkedValues.length === 0 || checkedValues.includes(event.category);
 
             const includesSearchTerm = searchTerm === '' || event.name.toLowerCase().includes(searchTerm);
