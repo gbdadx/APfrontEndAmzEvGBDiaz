@@ -1,6 +1,5 @@
 /**
- * se que todos pusieron el precio en las cards en las paginas de home, upcoming y past events,
- *  pero a mi me parecio que si tenia que ampliar detalles, pero preferi ponerlo en detalles. 
+ 
  */
 /**
  * armado de tarjetas y galeria
@@ -114,13 +113,11 @@ categoryCheckboxes.forEach(checkbox => {
             // consigue el valor de cada checkbox marcado
             const checkedValues = Array.from(checkedCheckboxes).map(checkbox => checkbox.value);
 
-
-
             // filtra eventos basado en categorias marcadas-seleccionadas
             const filteredEvents = todos.filter(event => checkedValues.includes(event.category));
 
             if (filteredEvents.length === 0) {
-                // si ningun evento coincide con la categoria marcada, no muestra nada
+                //no hay ningun filteredEvent ==> ningun evento coincide con la categoria marcada, no muestra nada
                 contenedorTarjetas.innerHTML = nothingFoundCard;
 
             } else {
@@ -137,7 +134,7 @@ categoryCheckboxes.forEach(checkbox => {
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
-// agrega eventListener al boton search      busca por barra de busqueda y check
+// agrega eventListener al boton search --- busca por barra de busqueda y check
 searchButton.addEventListener('click', event => {
     // obtiene el texto de busqueda ingresado por el usuario
     const searchTerm = searchInput.value.trim().toLowerCase();
