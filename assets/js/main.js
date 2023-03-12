@@ -14,7 +14,7 @@ async function fetchEvents() {
         const data = await response.json();
         eventos.currentDate = data.currentDate;
         eventos.events = data.events;
-        
+
         //inicio del contenido (previo, lo que arma check, cards y logica)
         function armadoGaleria(cadena, array) {
             for (const uno of array) {
@@ -161,6 +161,8 @@ async function fetchEvents() {
                 });
             });
         }
+
+
         //final del try catch, de la funcion fetchEvents
     }
     catch (error) {

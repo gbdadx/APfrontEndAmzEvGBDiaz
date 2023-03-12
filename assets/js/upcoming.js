@@ -20,8 +20,7 @@ async function fetchEvents() {
         function armadoGaleria(cadena, array) {
             for (const uno of array) {
                 const cardId = `card-${uno._id}`;// crear un unico ID para cada tarjeta
-                if (uno.date > eventos.currentDate) 
-                {
+                if (uno.date > eventos.currentDate) {
                     cadena += `<div class="col-12 col-md-5 col-lg-3 card" id="${cardId}">
                             <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
                            
@@ -155,6 +154,22 @@ async function fetchEvents() {
             });
 
         }
+        //para stats
+        const cont = Array(categorias.length).fill(0);//inicializa el array con ceros, lo habia hecho con un bucle pero no funciono
+
+        futuros.forEach(evento => {
+            const { category, price, estimate } = evento;//desestructurando...
+            
+            const index = categorias.indexOf(category);//si no encuentra la categoria en el array de categorias, devueolve -1
+            if (index !== -1) {
+                cont[index] += price * estimate;
+            }
+        });
+
+        console.log(cont);
+
+        //
+
         //final del try catch, de la funcion fetchEvents
     }
     catch (error) {
