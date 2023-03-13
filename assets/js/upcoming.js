@@ -49,7 +49,7 @@ async function fetchEvents() {
 
         }
         agregaTarjeta(futuros);
-
+        futuros.forEach((e) => console.log(e));
         contenedorTarjetas.innerHTML = armadoGaleria(tarjetas, futuros);
         goToDetails();
 
@@ -159,7 +159,7 @@ async function fetchEvents() {
 
         futuros.forEach(evento => {
             const { category, price, estimate } = evento;//desestructurando...
-            
+
             const index = categorias.indexOf(category);//si no encuentra la categoria en el array de categorias, devueolve -1
             if (index !== -1) {
                 cont[index] += price * estimate;

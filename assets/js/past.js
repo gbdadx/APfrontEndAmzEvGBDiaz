@@ -165,35 +165,7 @@ async function fetchEvents() {
 
         }
 
-        // para stats
-        const topThree = [];
-        const cont = Array(categorias.length).fill(0);//inicializa el array con ceros, lo habia hecho con un bucle pero no funciono
-
-        pasados.forEach(evento => {
-            const { category, price, assistance } = evento;
-            const index = categorias.indexOf(category);//si no encuentra la categoy en categorias, da -1
-            if (index !== -1) {
-                cont[index] += price * assistance;
-            }
-        });
-
-        console.log(cont);
-
-        // Seleccionar los 3 eventos que dieron más ganancias
-        const eventosOrdenados = pasados.sort((a, b) => { 
-            return (b.price * b.assistance) - (a.price * a.assistance);
-        });
-        const top3Eventos = eventosOrdenados.slice(0, 3);
-
-        console.log(top3Eventos);
-
-
-        /*
-          nota para mi:
-         points.sort(function(a, b){return a-b}); en ascending order
-        points.sort(function(a, b){return b-a}); en descending order
-        
-         */
+       
 
 
 
