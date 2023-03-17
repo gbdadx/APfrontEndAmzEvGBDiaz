@@ -81,45 +81,44 @@ async function fetchEvents() {
         cont2.forEach((e) => console.log(e))
         //TABLA SUPERIOR
         //Events with larger capacity
-        let eventosOrdenados = todos.sort((a, b) => (b.capacity) - (a.capacity));
-        eventosOrdenados = eventosOrdenados.slice(0, 3);
+        let evOrd = todos.sort((a, b) => (b.capacity) - (a.capacity));
+        evOrd = evOrd.slice(0, 3);
         console.log('eventosOrdenadosTop3 events with larger capacity (past and future events');
-        eventosOrdenados.forEach((e) => console.log(e));
+        evOrd.forEach((e) => console.log(e));
 
         //events with the larger percentaje of  attendance
         let eventsWithHighestAttendance = pasados.sort((a, b) => (b.assistance) - (a.assistance));
-        const topAttendance = eventsWithHighestAttendance.slice(0, 3);
+        const topAtt = eventsWithHighestAttendance.slice(0, 3);
         console.log(' eventsWithHighestAttendanceTop3- events with highest asistance-- only past events')
-        topAttendance.forEach((e) => console.log(e));
+        topAtt.forEach((e) => console.log(e));
 
         //Events with the lowest percentage of attendance
         let eventsWithLowestAttendance = pasados.sort((a, b) => (a.assistance) - (b.assistance));
-        const bottomAttendance = eventsWithLowestAttendance.slice(0, 3);
+        const botAtt = eventsWithLowestAttendance.slice(0, 3);
         console.log('eventsWithLowestAttendance - evednts with lowest assistance- only past events')
-        bottomAttendance.forEach((e) => console.log(e))
+        botAtt.forEach((e) => console.log(e))
 
 
 
         const tbody = ` <tbody id="tbody1">
 
         <tr>
-            <td>${topAttendance[0].name} </td>
-            <td>${bottomAttendance[0].name} </td>
-            <td>${eventosOrdenados[0].name}</td>
+            <td>${topAtt[0].name} </td>
+            <td>${botAtt[0].name} </td>
+            <td>${evOrd[0].name}</td>
 
         </tr>
-
         <tr>
-            <td>${topAttendance[1].name}</td>
-            <td>${bottomAttendance[1].name}</td>
-            <td>${eventosOrdenados[1].name}</td>
+            <td>${topAtt[1].name}</td>
+            <td>${botAtt[1].name}</td>
+            <td>${evOrd[1].name}</td>
 
         </tr>
-        
+    
         <tr>
-            <td>${topAttendance[2].name}</td>
-            <td>${bottomAttendance[2].name}</td>
-            <td>${eventosOrdenados[2].name}</td>
+            <td>${topAtt[2].name}</td>
+            <td>${botAtt[2].name}</td>
+            <td>${evOrd[2].name}</td>
 
         </tr>
     </tbody>`
@@ -130,13 +129,97 @@ async function fetchEvents() {
         //falta upcoming events by category (category, revenues, %of attendance))
 
 
+
+        const tbody2 = `
+<tbody id="tbody2">
+                <tr>
+                    <td>${categorias2[0]}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>${categorias2[1]}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>${categorias2[2]}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                <td>${categorias2[3]}</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>${categorias2[4]}</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>${categorias2[5]}</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            </tbody>
+`
+        const table2 = document.getElementById('tbody2');
+        table2.innerHTML = tbody2;
         //falta past events by category     (category, revenues, %of attendance)
 
 
 
 
 
+
+        const tbody3 = `
+        <tbody id="tbody2">
+                        <tr>
+                            <td>${categorias[0]}</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>${categorias[1]}</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>${categorias[2]}</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        <td>${categorias[3]}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>${categorias[4]}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>${categorias[5]}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                    <td>${categorias[6]}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
         
+        
+                    </tbody>
+        `
+
+        const table3 = document.getElementById('tbody3');
+        table3.innerHTML = tbody3;
 
         //final del try catch, de la funcion fetchEvents
 
