@@ -80,7 +80,6 @@ async function fetchEvents() {
          * seleccionar cards con los checkboxes y la barra de busqueda
          */
         const categoryCheckboxes = document.querySelectorAll('input[type="checkbox"]');
-        let filteredEventsCheckboxes;
         categoryCheckboxes.forEach(checkbox => {
             checkbox.addEventListener('change', event => {
                 const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
