@@ -71,7 +71,15 @@ h1 {
     justify-content: space-between;
 }
 
+table{
+    width: 100%;
 
+    padding:20px;
+}
+td{
+    padding:15px;
+   
+}
 
 .fa-brands:hover {
     color: white !important;
