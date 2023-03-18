@@ -21,32 +21,32 @@ async function fetchEvents() {
                 const cardId = `card-${uno._id}`;// crear un unico ID para cada tarjeta
 
                 if (uno.date < eventos.currentDate) {
-                    cadena += `<div class="col-12 col-sm-5 col-md-3 col-xl-2 card" id="${cardId}">
+                    cadena += `<div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xxl-2 card" id="${cardId}">
                             <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
                            
                             </div>
                             <div class="card-body " style="background-color: Lavender;">
                             <h5 class="card-title">${uno.name}</h5>
-                            <p class="card-text elipsis">${uno.description}</p>
+                            <p class="card-text d-inline-block text-truncate" style="max-width: 200px;">${uno.description}</p>
                             </div>
                             <div class="card-footer px-2 " style="background-color: Lavender;">
                             <span> ${uno.date}</span>
-                             <a href="#" class="btn btn-primary more-info-btn" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a> 
+                             <a href="#" class="btn btn-primary more-info-btn  btn-sm" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a> 
                              </div>
                         </div>`
                 } else {
 
-                    cadena += `<div class="col-12 col-sm-5 col-md-3 col-xl-2 card" id="${cardId}">
+                    cadena += `<div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xxl-2 card" id="${cardId}">
                         <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
                            
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">${uno.name}</h5>
-                            <p class="card-text elipsis" >${uno.description}</p>
+                            <p class="card-text d-inline-block text-truncate" style="max-width: 200px;">${uno.description}</p>
                         </div>
-                        <div class="card-footer px-2">
+                        <div class="card-footer px-2 d-flex ">
                         <span> ${uno.date}</span>
-                        <a href="#" class="btn btn-primary more-info-btn" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a>
+                        <a href="#" class="btn btn-primary more-info-btn  btn-sm" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a>
 
                         </div>
                 </div>`};
@@ -170,3 +170,22 @@ async function fetchEvents() {
     }
 };
 fetchEvents();
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
