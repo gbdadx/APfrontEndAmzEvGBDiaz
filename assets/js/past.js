@@ -30,7 +30,7 @@ async function fetchEvents() {
                         </div>
                         <div class="card-body" style="background-color: Lavender;">
                             <h5 class="card-title">${uno.name}</h5>
-                            <p class="card-text">${uno.description}</p>
+                            <p class="card-text d-inline-block text-truncate" style="max-width: 180px;">${uno.description}</p>
 
                         </div>
                         <div class="card-footer px-2 " style="background-color: Lavender;">
@@ -177,3 +177,23 @@ async function fetchEvents() {
     }
 };
 fetchEvents();
+/***********    scroll up */
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
