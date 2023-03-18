@@ -30,7 +30,8 @@ async function fetchEvents() {
                         </div>
                         <div class="card-body" style="background-color: Lavender;">
                             <h5 class="card-title">${uno.name}</h5>
-                            <p class="card-text" style="background-color:LightSeaGreen; text-align:center;padding:10px; color:white">Finished </p> 
+                            <p class="card-text">${uno.description}</p>
+
                         </div>
                         <div class="card-footer px-2 " style="background-color: Lavender;">
                         <span> ${uno.date}</span>
