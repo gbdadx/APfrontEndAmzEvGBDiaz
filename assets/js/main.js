@@ -21,13 +21,13 @@ async function fetchEvents() {
                 const cardId = `card-${uno._id}`;// crear un unico ID para cada tarjeta
 
                 if (uno.date < eventos.currentDate) {
-                    cadena += `<div class="col-12 col-md-5 col-lg-3 card" id="${cardId}">
+                    cadena += `<div class="col-12 col-sm-5 col-md-3 col-xl-2 card" id="${cardId}">
                             <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
                            
                             </div>
                             <div class="card-body " style="background-color: Lavender;">
                             <h5 class="card-title">${uno.name}</h5>
-                            <p class="card-text" style="background-color:LightSeaGreen; text-align:center;padding:10px; color:white">Finished </p> 
+                            <p class="card-text elipsis">${uno.description}</p>
                             </div>
                             <div class="card-footer px-2 " style="background-color: Lavender;">
                             <span> ${uno.date}</span>
@@ -36,13 +36,13 @@ async function fetchEvents() {
                         </div>`
                 } else {
 
-                    cadena += `<div class="col-12 col-md-5 col-lg-3 card" id="${cardId}">
+                    cadena += `<div class="col-12 col-sm-5 col-md-3 col-xl-2 card" id="${cardId}">
                         <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
                            
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">${uno.name}</h5>
-                            <p class="card-text">${uno.description}</p>
+                            <p class="card-text elipsis" >${uno.description}</p>
                         </div>
                         <div class="card-footer px-2">
                         <span> ${uno.date}</span>
