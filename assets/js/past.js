@@ -55,6 +55,7 @@ async function fetchEvents() {
         contenedorTarjetas.innerHTML = armadoGaleria(tarjetas, pasados);
         tarjetas = armadoGaleria(tarjetas, pasados);
         contenedorTarjetas.innerHTML = tarjetas;
+        goToDetails();
 
         /** 
          *  categorias, contenedor de checkboxes
