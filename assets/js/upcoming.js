@@ -94,6 +94,7 @@ async function fetchEvents() {
                         contenedorTarjetas.innerHTML = armadoGaleria('', filteredEvents);
                         goToDetails();
                     }
+                    goToDetails();
                 }
             });
 
@@ -131,9 +132,9 @@ async function fetchEvents() {
 
         });
         const nothingFoundCard = `<div class="col-12 card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center"style="background-color: Lavender;" >
-                                <h2 class="card-title">Sorry, we didnt find any results matching this search.</h2>
-                                <p class="card-text">Maybe it can help: try with other words or categories.</p>
+        <div class="card-body d-flex alert-warning flex-column justify-content-center align-items-center" >
+        <h2 class="card-title">Sorry, we didnt find any results matching this search.</h2>
+                                <p class="card-text"> try with other words or categories.</p>
                                 <div>
                                     <input type="button" btn-light style=" border:0px; border-radius:10px;padding:15px;"  value="refresh" onclick="location.reload()">
                                 </div>
@@ -181,11 +182,11 @@ fetchEvents();
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
