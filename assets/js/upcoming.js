@@ -29,9 +29,9 @@ async function fetchEvents() {
                                 <h5 class="card-title">${uno.name}</h5>
                                 <p class="card-text d-inline-block text-truncate" style="max-width: 180px;">${uno.description}</p>
                             </div>
-                            <div class="card-footer px-2">
-                                <span> ${uno.date}</span>
-                                <a href="#" class="btn btn-primary more-info-btn" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a>
+                            <div class="card-footer px-2 d-flex bg-white">
+                            <span> ${uno.date}</span>
+                                <a href="#" class="btn btn-secondary more-info-btn" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a>
                             </div>
                         </div>`;
                 }
