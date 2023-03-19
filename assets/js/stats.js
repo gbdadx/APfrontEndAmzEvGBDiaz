@@ -111,20 +111,20 @@ async function fetchEvents() {
 
         const tbody = ` <tbody id="tbody1">
       <tr>
-            <td class="text-center">${topAtt[0].name} </td>  
+            <td class="text-center">${topAtt[0].name} (%${perAtt(topAtt[0].assistance, topAtt[0].capacity)}) </td>  
             <td class="text-center">${botAtt[0].name} (%${perAtt(botAtt[0].assistance, botAtt[0].capacity)}) </td>  
             <td class="text-center">${evOrd[0].name} (${evOrd[0].capacity})</td>
 
         </tr>
         <tr>
-            <td class="text-center">${topAtt[1].name}</td>  
+            <td class="text-center">${topAtt[1].name} (%${perAtt(topAtt[1].assistance, topAtt[1].capacity)})  </td>  
             <td class="text-center">${botAtt[1].name} (%${perAtt(botAtt[1].assistance, botAtt[1].capacity)}) </td>            
             <td class="text-center">${evOrd[1].name} (${evOrd[1].capacity})</td>
 
         </tr>
     
         <tr>
-            <td class="text-center">${topAtt[2].name}</td>
+            <td class="text-center">${topAtt[2].name}  (%${perAtt(topAtt[2].assistance, topAtt[2].capacity)}) </td>
             <td class="text-center">${botAtt[2].name} (%${perAtt(botAtt[2].assistance, botAtt[2].capacity)}) </td>            
               <td class="text-center">${evOrd[2].name} (${evOrd[2].capacity})</td>
 

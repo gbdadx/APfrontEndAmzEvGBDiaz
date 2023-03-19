@@ -28,12 +28,12 @@ async function fetchEvents() {
                         <div class="card-header" style="background-image:url(${uno.image}); background-size: cover;">
                            
                         </div>
-                        <div class="card-body" style="background-color: Lavender;">
+                        <div class="card-body alert-secondary" >
                             <h5 class="card-title">${uno.name}</h5>
                             <p class="card-text d-inline-block text-truncate" style="max-width: 180px;">${uno.description}</p>
 
                         </div>
-                        <div class="card-footer px-2 " style="background-color: Lavender;">
+                        <div class="card-footer px-2 alert-secondary">
                         <span> ${uno.date}</span>
                         <a href="#" class="btn btn-primary more-info-btn" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a> 
                              </div>
@@ -131,7 +131,7 @@ async function fetchEvents() {
                         filteredEvents.push(event);
                     }
                 }
-
+                goToDetails();
                 if (filteredEvents.length === 0) {
                     contenedorTarjetas.innerHTML = nothingFoundCard;
                 } else {
@@ -142,9 +142,9 @@ async function fetchEvents() {
         });
 
         const nothingFoundCard = `<div class="col-12 card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center"style="background-color: Lavender;" >
+                            <div class="card-body d-flex alert-warning flex-column justify-content-center align-items-center" >
                                 <h2 class="card-title">Sorry, we didnt find any results matching this search.</h2>
-                                <p class="card-text">Maybe it can help: try with other words or categories.</p>
+                                <p class="card-text">try with other words or categories.</p>
                                 <div>
                                     <input type="button" btn-light style=" border:0px; border-radius:10px;padding:15px;"  value="refresh" onclick="location.reload()">
                                 </div>
@@ -166,7 +166,7 @@ async function fetchEvents() {
 
         }
 
-       
+
 
 
 
@@ -181,19 +181,19 @@ fetchEvents();
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 500px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
