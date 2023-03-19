@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    color-scheme: light dark;
+    /* both supported */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -87,7 +92,7 @@ td {
 
 tr:hover {
     background-color: antiquewhite;
-    
+
 }
 
 .fa-brands:hover {

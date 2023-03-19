@@ -31,7 +31,7 @@ async function fetchEvents() {
                             </div>
                             <div class="card-footer px-2 alert-secondary" >
                             <span id="Past event"> Passed</span>
-                             <a href="#" class="btn btn-primary more-info-btn  btn-sm" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a> 
+                             <a href="#" class="btn btn-secondary more-info-btn  btn-sm" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a> 
                              </div>
                         </div>`
                 } else {
@@ -46,7 +46,7 @@ async function fetchEvents() {
                         </div>
                         <div class="card-footer px-2 d-flex bg-white">
                         <span> ${uno.date}</span>
-                        <a href="#" class="btn btn-primary more-info-btn  btn-sm" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a>
+                        <a href="#" class="btn btn-secondary more-info-btn  btn-sm" data-event="${encodeURIComponent(JSON.stringify(uno))}">More info</a>
 
                         </div>
                 </div>`};
