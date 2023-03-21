@@ -169,11 +169,10 @@ async function fetchEvents() {
         }
 
         const tbody2 = `<tbody id="tbody2">
-       
         <tr>
             <td>${categorias[0]}</td>   
             <td class="text-end">${arrBook[1]} </td> 
-            <td class="text-end">% ${getPAt(arrBook)} </td>
+            <td class="text-end ldBar" data-value="50"">% ${getPAt(arrBook)}</td>
         </tr>
         <tr>
             <td>${categorias[1]}</td>   

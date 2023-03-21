@@ -38,7 +38,10 @@ h1 {
     display: flex;
     align-items: center;
 }
-
+/* spiner */
+.spinner-grow{
+    margin-top: 20px;
+}
 /*   galeria   */
 
 .galeria {
