@@ -72,10 +72,11 @@ async function fetchEvents() {
         }
 
         for (let i = 0; i < categorias.length; i++) { //esto es lo que modifica la label de los checkboxes
-            categories += `<div class="form-check form-check-inline">
-            <label class="form-check-label form-control-sm" ><span class="caja"></span>
-            <input class="form-check-input" type="checkbox"  value=${categorias[i]}>${categorias[i]}</label>
-            </div>`;
+            categories += `<div class="form-check form-check-inline form-control-sm col-5 col-sm-3 col-md-2 col-lg-1">
+                                <label class="form-check-label form-control-sm" >
+                                <input class="form-check-input" type="checkbox"  value=${categorias[i]}>${categorias[i]}</label>
+                            </div>`;
+        
         }
         cajon.innerHTML = categories;
 
