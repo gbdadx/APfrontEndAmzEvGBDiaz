@@ -136,7 +136,7 @@ for (let i = 0; i < categorias.length; i++) { //esto es lo que modifica la label
         <h2 class="card-title">Sorry, we didnt find any results matching this search.</h2>
                                 <p class="card-text"> try with other words or categories.</p>
                                 <div>
-                                    <input type="button" btn-light style=" border:0px; border-radius:10px;padding:15px;"  value="refresh" onclick="location.reload()">
+                                    <input type="button" class="btn-outline-warning" style=" border:0px; border-radius:10px;padding:15px;"  value="refresh" onclick="location.reload()">
                                 </div>
                              </div>
                             
